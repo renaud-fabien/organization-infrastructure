@@ -1,3 +1,20 @@
+# Provider
+variable "github_app_id" {
+  description = "(Required) This is the ID of the GitHub App"
+  type        = string
+}
+
+variable "github_app_installation_id" {
+  description = "(Required) This is the ID of the GitHub App installation"
+  type        = string
+}
+
+variable "github_app_pem_file" {
+  description = "(Required) This is the contents of the GitHub App private key PEM file"
+  type        = string
+}
+
+
 variable "github_organization" {
   description = "(Required) GitHub organization"
   type = object({
